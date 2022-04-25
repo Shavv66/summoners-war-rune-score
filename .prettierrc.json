@@ -1,0 +1,7 @@
+{
+	"printWidth": 180,
+	"tabWidth": 4,
+	"useTabs": true,
+	"trailingCommas": "none",
+	"vueIndentScriptAndStyle": true
+}

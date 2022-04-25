@@ -1,5 +1,6 @@
 {
-  "compilerOptions": {
+	"extends": "@vue/tsconfig/tsconfig.web.json",
+	"compilerOptions": {
     "allowJs": true,
     "module": "commonjs",
     "skipLibCheck": true,
