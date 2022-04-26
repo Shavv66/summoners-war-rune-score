@@ -2,7 +2,7 @@
 	"extends": "@vue/tsconfig/tsconfig.web.json",
 	"compilerOptions": {
 		"allowJs": true,
-		"module": "commonjs",
+		"module": "es2020",
 		"skipLibCheck": true,
 		"esModuleInterop": true,
 		"noImplicitAny": true,
@@ -12,8 +12,7 @@
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"paths": {
-			"*": ["node_modules/*"]
+			"@app/*": ["src/app/*"]
 		}
-	},
-	"include": ["src/**/*"]
+	}
 }
