@@ -1,3 +1,4 @@
+const path = require("path");
 const rules = require("./webpack.rules");
 
 module.exports = {
@@ -11,6 +12,9 @@ module.exports = {
 		rules
 	},
 	resolve: {
+		alias: {
+			"@main-process": path.resolve(__dirname, "src/main-process")
+		} ,
 		extensions: [".js", ".ts", ".jsx", ".tsx", ".css", ".json"]
 	}
 };

@@ -87,3 +87,12 @@ typings/
 
 # Electron-Forge
 out/
+
+# VS Code
+.vscode/
+
+# Build output
+dist/
+
+# Run output
+**/CurrentProfile.json

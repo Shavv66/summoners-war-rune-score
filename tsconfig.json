@@ -12,7 +12,9 @@
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"paths": {
-			"@app/*": ["src/app/*"]
+			"@app/*": ["src/app/*"],
+			"@main-process/*": ["src/main-process/*"]
 		}
-	}
+	},
+	"exclude": ["src/server/"]
 }

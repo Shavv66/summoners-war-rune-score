@@ -14,7 +14,7 @@ namespace SwrsServer.Controllers
 			_profileImportService = profileImportService;
 		}
 
-		[HttpPut("{filePath}")]
+		[HttpPost("{filePath}")]
 		public void ImportProfile(string filePath)
 		{
 			_profileImportService.ImportFile(filePath);

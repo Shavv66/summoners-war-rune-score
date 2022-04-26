@@ -1,16 +1,13 @@
 <script setup lang="ts">
-	import { ref } from "vue";
+	import { provideServices } from "@app/core/service-container";
 
-	const count = ref(0);
+	const { profileImportService } = provideServices();
 
-	function increment() {
-		count.value++;
+	async function importProfile() {
+		await profileImportService.importProfile();
 	}
 </script>
 
 <template>
-	<h3>
-		Count is {{ count }}
-	</h3>
-	<button @click="increment">Clicky</button>
+	<button @click="importProfile">Import Profile</button>
 </template>
