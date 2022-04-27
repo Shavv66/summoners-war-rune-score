@@ -11,7 +11,8 @@ import { contextBridge, ipcRenderer } from "electron";
 // }
 
 const electronApi: IElectronApi = {
-	selectFile: (options: Electron.OpenDialogOptions) => ipcRenderer.invoke("selectFile", options)
+	selectFile: (options: Electron.OpenDialogOptions) => ipcRenderer.invoke("selectFile", options),
+	getEnvironmentVariable: (variableName: string) => ipcRenderer.invoke("getEnvironmentVariable", variableName)
 };
 
 contextBridge.exposeInMainWorld("electronApi", electronApi);

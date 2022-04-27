@@ -5,10 +5,10 @@ export class ProfileImportService {
 	constructor(private readonly electronApi: IElectronApi) {}
 
 	public async importProfile(): Promise<void> {
+		const userProfile = await this.electronApi.getEnvironmentVariable("USERPROFILE");
 		const filePath: string | undefined = await this.electronApi.selectFile({
 			title: "Select profile",
-			// Todo this doesn't work
-			defaultPath: "%userprofile%/Desktop/Summoners War Exporter Files"
+			defaultPath: `${userProfile}\\Desktop\\Summoners War Exporter Files`
 		});
 
 		if (filePath === undefined) {

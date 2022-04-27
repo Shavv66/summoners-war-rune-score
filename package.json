@@ -1,8 +1,8 @@
 {
 	"name": "summoners-war-rune-score",
-	"productName": "summoners-war-rune-score",
+	"productName": "Summoners War Rune Score",
 	"version": "1.0.0",
-	"description": "Score runes to make it easy to know what to sell",
+	"description": "Summoners War Rune Score Installer",
 	"main": ".webpack/main",
 	"scripts": {
 		"start": "electron-forge start",
@@ -24,10 +24,6 @@
 	},
 	"devDependencies": {
 		"@electron-forge/cli": "^6.0.0-beta.63",
-		"@electron-forge/maker-deb": "^6.0.0-beta.63",
-		"@electron-forge/maker-rpm": "^6.0.0-beta.63",
-		"@electron-forge/maker-squirrel": "^6.0.0-beta.63",
-		"@electron-forge/maker-zip": "^6.0.0-beta.63",
 		"@electron-forge/plugin-webpack": "^6.0.0-beta.63",
 		"@typescript-eslint/eslint-plugin": "^5.20.0",
 		"@typescript-eslint/parser": "^5.20.0",
